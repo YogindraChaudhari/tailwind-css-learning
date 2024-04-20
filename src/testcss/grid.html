@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>2-element --></p>
+    <div class="m-4 grid grid-cols-2 gap-4 sm:grid-cols-2">
+      <div class="min-h-[100px] rounded bg-rose-500 shadow-xl">1</div>
+      <div class="min-h-[100px] rounded bg-rose-300 shadow-xl">2</div>
+    </div>
+    <p>3-element</p>
+    <div class="m-4 grid gap-4 sm:grid-cols-3">
+      <div class="min-h-[100px] rounded bg-rose-500 shadow-xl">1</div>
+      <div class="min-h-[100px] rounded bg-rose-300 shadow-xl">2</div>
+      <div class="min-h-[100px] rounded bg-rose-700 shadow-xl">3</div>
+    </div>
+
+    <p>Non-equal 2-element --></p>
+    <div class="m-4 grid gap-4 sm:grid-cols-12">
+      <div class="min-h-[100px] rounded bg-rose-500 shadow-xl sm:col-span-4">1</div>
+      <div class="min-h-[100px] rounded bg-rose-300 shadow-xl sm:col-span-8">2</div>
+    </div>
+
+    <p>Non-equal 3-element</p>
+    <div class="m-4 grid gap-4 sm:grid-cols-12">
+      <div class="hidden min-h-[100px] rounded bg-rose-500 shadow-xl sm:col-span-2 sm:block">1</div>
+      <div class="min-h-[100px] rounded bg-rose-300 shadow-xl sm:col-span-6">2</div>
+      <div class="hidden min-h-[100px] rounded bg-rose-700 shadow-xl sm:col-span-4 sm:block">3</div>
+    </div>
+  </body>
+</html>
